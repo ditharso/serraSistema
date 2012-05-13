@@ -22,7 +22,7 @@ public class CurralModel implements Serializable{
 	private String nome;
 	
 	@Column 
-	private String numeroDoCurral;
+	private String numero;
 	
 	@Column
 	private String tamanho;
@@ -52,12 +52,15 @@ public class CurralModel implements Serializable{
 		this.nome = nome;
 	}
 
-	public String getNumeroDoCurral() {
-		return numeroDoCurral;
+	
+
+
+	public String getNumero() {
+		return numero;
 	}
 
-	public void setNumeroDoCurral(String numeroDoCurral) {
-		this.numeroDoCurral = numeroDoCurral;
+	public void setNumero(String numero) {
+		this.numero = numero;
 	}
 
 	public String getTamanho() {

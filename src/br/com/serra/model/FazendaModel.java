@@ -25,7 +25,7 @@ public class FazendaModel implements Serializable{
 	@Column
 	private String criacao;
 	
-	@Column
+	@Column 
 	private String escricaoEstadual;
 	
 	@Column

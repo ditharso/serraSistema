@@ -12,5 +12,11 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		<mapping class="br.com.serra.model.PessoaModel"/>
+		<mapping class="br.com.serra.model.AnimalModel"/>
+		<mapping class="br.com.serra.model.CurralModel"/>
+		<mapping class="br.com.serra.model.DescarteModel"/>
+		<mapping class="br.com.serra.model.FazendaModel"/>
+		<mapping class="br.com.serra.model.MovimentacaoModel"/>
+		
 	</session-factory>
 </hibernate-configuration>
