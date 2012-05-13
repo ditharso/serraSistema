@@ -11,12 +11,14 @@
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
-		<mapping class="br.com.serra.model.PessoaModel"/>
-		<mapping class="br.com.serra.model.AnimalModel"/>
-		<mapping class="br.com.serra.model.CurralModel"/>
-		<mapping class="br.com.serra.model.DescarteModel"/>
-		<mapping class="br.com.serra.model.FazendaModel"/>
-		<mapping class="br.com.serra.model.MovimentacaoModel"/>
-		
+		<mapping class="br.com.serra.model.PessoaModel" />
+		<mapping class="br.com.serra.model.AnimalModel" />
+		<mapping class="br.com.serra.model.CurralModel" />
+		<mapping class="br.com.serra.model.DescarteModel" />
+		<mapping class="br.com.serra.model.FazendaModel" />
+		<mapping class="br.com.serra.model.MovimentacaoModel" />
+		<mapping class="br.com.serra.model.RebanhoModel" />
+		<mapping class="br.com.serra.model.SistemaFazendaModel" />
+
 	</session-factory>
 </hibernate-configuration>

@@ -22,10 +22,10 @@ public class RebanhoModel implements Serializable{
 	 private String nome;
 	 
 	 @Column
-	 private String numeroDoRebanho;
+	 private String numero;
 	 
 	 @Column
-	 private String tipoDeCriacao;
+	 private String tipo;
 
 	public int getId() {
 		return Id;
@@ -43,20 +43,20 @@ public class RebanhoModel implements Serializable{
 		this.nome = nome;
 	}
 
-	public String getNumeroDoRebanho() {
-		return numeroDoRebanho;
+	public String getNumero() {
+		return numero;
 	}
 
-	public void setNumeroDoRebanho(String numeroDoRebanho) {
-		this.numeroDoRebanho = numeroDoRebanho;
+	public void setNumero(String numero) {
+		this.numero = numero;
 	}
 
-	public String getTipoDeCriacao() {
-		return tipoDeCriacao;
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setTipoDeCriacao(String tipoDeCriacao) {
-		this.tipoDeCriacao = tipoDeCriacao;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	 
 	 

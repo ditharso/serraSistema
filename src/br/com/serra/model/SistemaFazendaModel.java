@@ -26,7 +26,7 @@ public class SistemaFazendaModel implements Serializable{
 	private String criacaoPrincipal;
 	
 	@Column 
-	private String infraestruturaElogistacaDeProcucao;
+	private String infraestrutura;
 	
 	@Column 
 	private String tipodeExploracao;
@@ -50,21 +50,20 @@ public class SistemaFazendaModel implements Serializable{
 		this.nome = nome;
 	}
 
-	public String getCriacaoprincipal() {
+	public String getCriacaoPrincipal() {
 		return criacaoPrincipal;
 	}
 
-	public void setCriacaoprincipal(String criacaoprincipal) {
-		this.criacaoPrincipal = criacaoprincipal;
+	public void setCriacaoPrincipal(String criacaoPrincipal) {
+		this.criacaoPrincipal = criacaoPrincipal;
 	}
 
-	public String getInfraestruturaElogistacaDeProcucao() {
-		return infraestruturaElogistacaDeProcucao;
+	public String getInfraestrutura() {
+		return infraestrutura;
 	}
 
-	public void setInfraestruturaElogistacaDeProcucao(
-			String infraestruturaElogistacaDeProcucao) {
-		this.infraestruturaElogistacaDeProcucao = infraestruturaElogistacaDeProcucao;
+	public void setInfraestrutura(String infraestrutura) {
+		this.infraestrutura = infraestrutura;
 	}
 
 	public String getTipodeExploracao() {
@@ -82,8 +81,8 @@ public class SistemaFazendaModel implements Serializable{
 	public void setSistemadeCriacao(String sistemadeCriacao) {
 		this.sistemadeCriacao = sistemadeCriacao;
 	}
-	
-	
+
+
 	
 
 	
