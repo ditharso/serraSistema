@@ -19,6 +19,9 @@
 		<mapping class="br.com.serra.model.MovimentacaoModel" />
 		<mapping class="br.com.serra.model.RebanhoModel" />
 		<mapping class="br.com.serra.model.SistemaFazendaModel" />
+		<mapping class="br.com.serra.model.UsuarioModel" />
+		<mapping class="br.com.serra.model.VacinaModel" />
+		<mapping class="br.com.serra.model.VacinaRebanhoModel" />
 
 	</session-factory>
 </hibernate-configuration>
