@@ -8,16 +8,16 @@ import org.hibernate.Transaction;
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.FazendaModel;
 
-import com.serra.hibernate.HibernateUtil;
+import com.serra.hibernate.CriadorDeSession;
 
 @Component
 public class FazendaDao {
 
-private Session session;
+	private final Session session;
 	
 	
-	public FazendaDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public FazendaDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(FazendaModel fazenda){

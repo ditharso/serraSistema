@@ -8,16 +8,15 @@ import org.hibernate.Transaction;
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.VacinaModel;
 
-import com.serra.hibernate.HibernateUtil;
 
 @Component
 public class VacinaDao {
 
-private Session session;
+private final Session session;
 	
 	
-	public VacinaDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public VacinaDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(VacinaModel vacina){

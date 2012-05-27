@@ -5,8 +5,6 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.serra.hibernate.HibernateUtil;
-
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.MovimentacaoModel;
 
@@ -16,8 +14,8 @@ public class MovimentacaoDao {
 private Session session;
 	
 	
-	public MovimentacaoDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public MovimentacaoDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(MovimentacaoModel movimentacao){

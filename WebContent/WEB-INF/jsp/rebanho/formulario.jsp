@@ -1,34 +1,30 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Insert title here</title>
-</head>
 <body>
 
-	<form action="adiciona" method="post">
+	<form class="exampleform" action="adiciona" method="post">
 
 
 		<fieldset>
 			<legend>Adicionar Rebanho</legend>
-			
-			<label for="nome">Nome:</label> 
-			<input id="nome" type="text" name="rebanho.nome" /> 
-			
-			<label for="numero">numero:</label>
-			<input id="numero" type="text" name="rebanho.numero" />
-			
-			<label for="tipo">tipo:</label> 
-			<input id="tipo" type="text" name="rebanho.tipo" />
-			
+
+			<table>
+				<tr>
+					<td><label for="nome">Nome:</label></td>
+					<td><input id="nome" type="text" name="rebanho.nome" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="numero">Número:</label></td>
+					<td><input id="numero" type="text" name="rebanho.numero" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="tipo">Tipo:</label></td>
+					<td><input id="tipo" type="text" name="rebanho.tipo" /></td>
+				</tr>
+
+			</table>
 
 
-
-
-			
 			<button type="submit">Enviar</button>
 		</fieldset>
 

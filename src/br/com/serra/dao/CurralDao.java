@@ -8,15 +8,14 @@ import org.hibernate.Transaction;
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.CurralModel;
 
-import com.serra.hibernate.HibernateUtil;
 
 @Component
 public class CurralDao {
 	
-	private Session session;
+	private final Session session;	
 	
-	public CurralDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public CurralDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(CurralModel curral){

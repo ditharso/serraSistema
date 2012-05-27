@@ -8,16 +8,15 @@ import org.hibernate.Transaction;
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.DescarteModel;
 
-import com.serra.hibernate.HibernateUtil;
 
 @Component
 public class DescarteDao {
 	
-private Session session;
+	private final Session session;
 	
 	
-	public DescarteDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public DescarteDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(DescarteModel descarte){

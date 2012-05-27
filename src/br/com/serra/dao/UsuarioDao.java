@@ -8,16 +8,16 @@ import org.hibernate.Transaction;
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.UsuarioModel;
 
-import com.serra.hibernate.HibernateUtil;
+import com.serra.hibernate.CriadorDeSession;
 
 @Component
 public class UsuarioDao {
 	
-private Session session;
+private final Session session;
 	
 	
-	public UsuarioDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public UsuarioDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(UsuarioModel usuario){

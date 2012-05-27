@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.hibernate.validator.NotNull;
+
 
 @Entity
 public class AnimalModel implements Serializable{
@@ -27,6 +29,7 @@ public class AnimalModel implements Serializable{
 	private String sexo;
 	
 	@Column
+	@NotNull
 	private String nascimento;
 	
 	@Column

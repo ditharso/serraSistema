@@ -1,0 +1,22 @@
+form.exampleform { width: 25em; }
+em.error {
+  background:url("../images/unchecked.gif") no-repeat 0px 0px;
+  padding-left: 16px;
+}
+em.success {
+  background:url("../images/checked.gif") no-repeat 0px 0px;
+  padding-left: 16px;
+}
+
+form.exampleform label.error {
+	margin-left: auto;
+	width: 250px;
+}
+form.exampleform fieldset {
+	background-color: #F5F5F5;
+}
+#summary { color: red; }
+
+h3 {
+	color: blue
+}

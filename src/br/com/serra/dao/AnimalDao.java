@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.serra.hibernate.HibernateUtil;
+import com.serra.hibernate.CriadorDeSession;
 
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.AnimalModel;
@@ -13,11 +13,11 @@ import br.com.serra.model.AnimalModel;
 @Component
 public class AnimalDao {
 
-	private Session session;
+	private final Session session;
 	
 	
-	public AnimalDao(){
-		this.session = HibernateUtil.CriacaoSessao();
+	public AnimalDao(Session session){
+		this.session = session;
 	}
 	
 	public void salvar(AnimalModel animal){

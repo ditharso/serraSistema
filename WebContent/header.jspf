@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<html>
+<head>
+<title>Sistema Serra</title>
+<link rel="stylesheet" href="css/menu.css" type="text/css"
+	media="screen" />
+<link rel="stylesheet" href="../css/menu.css" type="text/css"
+	media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/example.css" />
+<link href="<c:url value="/javascripts/jquery.autocomplete.css"/>"
+	rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery-1.3.2.min.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery.validate.min.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery.autocomplete.min.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery.puts.js"/>"></script>
+<fmt:setLocale value="pt_br" />
+</head>
+
+<body>
+	<div id="header"></div>
+
+	<div id="body">
+		<ul id="menu">
+
+			<li><a href="#" class="drop">Mapa do Sistema</a> <!-- Begin 4 columns Item -->
+
+				<div class="dropdown_4columns">
+					<!-- Begin 4 columns container -->
+
+					<div class="col_4">
+						<h2>Geral</h2>
+					</div>
+
+					<div class="col_1">
+
+						<h3>Animal</h3>
+						<ul>
+							<li><a href="<c:url value="/animal/novo"/>">Cadastrar
+									Animal</a></li>
+							<li><a href="<c:url value="/animal"/>">Listar Animais</a></li>
+							<li><a href="<c:url value="/situacao/novo"/>">Situação
+									Animal</a></li>
+							<li><a href="<c:url value="/situacao"/>">Listar
+									Situações</a></li>
+
+						</ul>
+
+					</div>
+
+					<div class="col_1">
+
+						<h3>Fazenda</h3>
+						<ul>
+							<li><a href="<c:url value="/fazenda/formulario"/>">Cadastrar
+									Fazenda</a></li>
+							<li><a href="<c:url value="/fazenda/lista"/>">Listar
+									Fazendas</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/formulario"/>">Sistema
+									Fazenda</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/lista"/>">Editar
+									Sistemas</a></li>
+							<li><a href="<c:url value="/usuario/formulario"/>">Cadastrar
+									Usuário</a></li>
+							<li><a href="<c:url value="/usuario/lista"/>">Listar
+									Usuário</a></li>
+						</ul>
+
+					</div>
+
+					<div class="col_1">
+
+						<h3>Saúde</h3>
+						<ul>
+							<li><a href="<c:url value="/descarte/formulario"/>">Descarte
+									Animal</a></li>
+							<li><a href="<c:url value="/descarte/lista"/>">Listar
+									Descartes</a></li>
+							<li><a href="<c:url value="/vacina/formulario"/>">Cadastrar
+									Vacinas</a></li>
+							<li><a href="<c:url value="/vacina/lista"/>">Listar
+									Animal</a></li>
+							<li><a href="<c:url value="/vacinaRebanho/formulario"/>">Vacinar
+									Rebanho</a></li>
+							<li><a href="<c:url value="/vacinaRebanho/lista"/>">Listar
+									Vacinações</a></li>
+
+						</ul>
+
+					</div>
+
+					<div class="col_1">
+
+						<h3>Sistema</h3>
+						<ul>
+							<li><a href="<c:url value="/fazenda/formulario"/>">Cadastrar
+									Fazenda</a></li>
+							<li><a href="<c:url value="/fazenda/lista"/>">listar
+									Fazenda</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/formulario"/>">Sistema
+									Produtivo</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/lista"/>">Listar
+									Produtivo</a></li>
+							<li><a href="<c:url value="/usuario/formulario"/>">Cadastrar
+									Usuário</a></li>
+							<li><a href="<c:url value="/usuario/lista"/>">Listar
+									Usuário</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+			<li class="menu_left"><a href="#" class="drop">Animal</a>
+
+				<div class="dropdown_1column  align_left">
+
+					<div class="col_1">
+
+						<ul class="simple">
+							<li><a href="<c:url value="/animal/novo"/>">Cadastrar
+									Animal</a></li>
+							<li><a href="<c:url value="/animal"/>">Listar Animais</a></li>
+							<li><a href="<c:url value="/situacao/novo"/>">Situação
+									Animal</a></li>
+							<li><a href="<c:url value="/situacao"/>">Listar
+									Situações</a></li>
+
+						</ul>
+
+					</div>
+
+				</div></li>
+
+			<li class="menu_left"><a href="#" class="drop">Fazenda</a>
+
+				<div class="dropdown_1column  align_left">
+
+					<div class="col_1">
+
+						<ul class="simple">
+							<li><a href="<c:url value="/fazenda/formulario"/>">Cadastrar
+									Fazenda</a></li>
+							<li><a href="<c:url value="/fazenda/lista"/>">Listar
+									Fazendas</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/formulario"/>">Sistema
+									Fazenda</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/lista"/>">Editar
+									Sistemas</a></li>
+							<li><a href="<c:url value="/usuario/formulario"/>">Cadastrar
+									Usuário</a></li>
+							<li><a href="<c:url value="/usuario/lista"/>">Listar
+									Usuário</a></li>
+						</ul>
+
+					</div>
+
+				</div></li>
+
+			<li class="menu_left"><a href="#" class="drop">Saúde</a>
+
+				<div class="dropdown_1column  align_left">
+
+					<div class="col_1">
+
+						<ul class="simple">
+							<li><a href="<c:url value="/descarte/formulario"/>">Descarte
+									Animal</a></li>
+							<li><a href="<c:url value="/descarte/lista"/>">Listar
+									Descartes</a></li>
+							<li><a href="<c:url value="/vacina/formulario"/>">Cadastrar
+									Vacinas</a></li>
+							<li><a href="<c:url value="/vacina/lista"/>">Listar
+									Animal</a></li>
+							<li><a href="<c:url value="/vacinaRebanho/formulario"/>">Vacinar
+									Rebanho</a></li>
+							<li><a href="<c:url value="/vacinaRebanho/lista"/>">Listar
+									Vacinações</a></li>
+						</ul>
+
+					</div>
+
+				</div></li>
+
+			<li class="menu_left"><a href="#" class="drop">Sistema</a>
+
+				<div class="dropdown_1column  align_left">
+
+					<div class="col_1">
+
+						<ul class="simple">
+							<li><a href="<c:url value="/fazenda/formulario"/>">Cadastrar
+									Fazenda</a></li>
+							<li><a href="<c:url value="/fazenda/lista"/>">listar
+									Fazenda</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/formulario"/>">Sistema
+									Produtivo</a></li>
+							<li><a href="<c:url value="/sistemaFazenda/lista"/>">Listar
+									Produtivo</a></li>
+							<li><a href="<c:url value="/usuario/formulario"/>">Cadastrar
+									Usuário</a></li>
+							<li><a href="<c:url value="/usuario/lista"/>">Listar
+									Usuário</a></li>
+
+						</ul>
+
+					</div>
+
+				</div></li>
+
+			<li class="menu_right"><a href="#" class="drop">Login</a>
+
+				<div class="dropdown_1column align_right">
+
+					<div class="col_1">
+
+						<ul class="simple">
+							<li><a href="#">Entrar no Sistema</a></li>
+							<li><a href="#">Sair do Sistema</a></li>
+
+						</ul>
+
+					</div>
+
+				</div></li>
+
+		</ul>
+
+
+
+		<div id="erros">
+			<ul>
+				<c:forEach items="${errors}" var="error">
+					<li>${error.category } - ${error.message }</li>
+				</c:forEach>
+			</ul>
+		</div>
+
+		<div id="content">

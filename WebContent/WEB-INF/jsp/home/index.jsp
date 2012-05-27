@@ -9,12 +9,13 @@
 </head>
 <body>
 
-<table border="1" bgcolor="blue">
+<h3 id="summary"></h3>
+<table border="1">
 	<tr>
 	
 	<td><a href="rebanho/formulario">Rebanho</a></td>
 	<td><a href="fazenda/formulario">Fazenda</a></td>
-	<td><a href="animal/formulario">Animal</a></td>
+	<td><a href="animal/novo">Animal</a></td>
 	<td><a href="curral/formulario">Curral</a></td>
 	<td><a href="usuario/formulario">usuario</a></td>
 	<td><a href="descarte/formulario">descarte</a></td>
@@ -22,6 +23,7 @@
 	<td><a href="sistemaFazenda/formulario">sistemaFazenda</a></td>
 	<td><a href="vacina/formulario">vacina</a></td>
 	<td><a href="vacinaRebanho/formulario">vacinaRebanho</a></td>
+	<td><a href="situacao/novo">situacao</a></td>
    </tr>
 </table>
 

@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.serra.hibernate.HibernateUtil;
+import com.serra.hibernate.CriadorDeSession;
 
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.PessoaModel;
@@ -15,11 +15,11 @@ import br.com.serra.model.PessoaModel;
 public class PessoaDao {
 
 	//variável comum para todos os metodos da classe
-	private Session session;
+	private final Session session;
 
 	//recupera a sessao quando a classe pessoadao e estanciada
-	public PessoaDao() {
-		this.session = HibernateUtil.CriacaoSessao();
+	public PessoaDao(Session session) {
+		this.session = session;
 	}
 
 	//metodo para salvar passando um objeto pessoa
