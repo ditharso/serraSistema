@@ -1,53 +1,91 @@
-<body>
+<div align="center">
 
-	<form action="adiciona" class="exampleform" method="post">
+	<form action="adiciona"  method="post">
 
 
 		<fieldset>
+
 			<legend>Adicionar Fazenda</legend>
-			
-			<label for="nome">Nome:</label> 
-			<input id="nome" type="text" name="fazenda.nome" /> 
-			
-			<label for="criacao">criacao:</label>
-			<input id="criacao" type="text" name="fazenda.criacao" />
-			
-			<label for="escricaoEstadual">escricaoEstadual:</label> 
-			<input id="escricaoEstadual" type="text" name="fazenda.escricaoEstadual" />
-			
-			<label for="incra">incra:</label> 
-			<input id="incra" type="text" name="fazenda.incra" />
 
-			<label for="area">area:</label> 
-			<input id="area" type="text" name="fazenda.area" />
+			<table border="1">
+				<tr>
+					<td><label for="nome">Nome:</label></td>
+					<td><input id="nome" type="text" name="fazenda.nome" /></td>
+				</tr>
 
-			<label for="estado">Estado:</label> 
-			<input id="estado" type="text" name="fazenda.estado" />
+				<tr>
+					<td><label for="criacao">Criação:</label></td>
+					<td><input id="criacao" type="text" name="fazenda.criacao" />
+					</td>
+				</tr>
 
-			<label for="cidade">cidade:</label> 
-			<input id="cidade" type="text" name="fazenda.cidade" />
+				<tr>
+					<td><label for="escricaoEstadual">Escricão Estadual:</label></td>
+					<td><input id="escricaoEstadual" type="text"
+						name="fazenda.escricaoEstadual" /></td>
+				</tr>
 
-			<label for="cep">cep:</label> 
-			<input id="cep" type="text" name="fazenda.cep" />
-			
-			<label for="endereco">endereco:</label> 
-			<input id="endereco" type="text" name="fazenda.endereco" />
-			
-			<label for="telefone">telefone:</label> 
-			<input id="telefone" type="text" name="fazenda.telefone" />
-			
-			<label for="telefone2">telefone2:</label> 
-			<input id="telefone2" type="text" name="fazenda.telefone2" />
-			
-			<label for="proprietario">proprietario:</label> 
-			<input id="proprietario" type="text" name="fazenda.proprietario" />
+				<tr>
+					<td><label for="incra">Incra:</label></td>
+					<td><input id="incra" type="text" name="fazenda.incra" /></td>
+				</tr>
 
-			
-			<button type="submit">Enviar</button>
+
+
+				<tr>
+					<td><label for="area">Área:</label></td>
+					<td><input id="area" type="text" name="fazenda.area" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="estado">Estado:</label></td>
+					<td><input id="estado" type="text" name="fazenda.estado" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="cidade">Cidade:</label></td>
+					<td><input id="cidade" type="text" name="fazenda.cidade" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="cep">CEP:</label></td>
+					<td><input id="cep" type="text" name="fazenda.cep" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="endereco">Endereço:</label></td>
+					<td><input id="endereco" type="text" name="fazenda.endereco" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="telefone">Telefone:</label></td>
+					<td><input id="telefone" type="text" name="fazenda.telefone" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="telefone2">Telefone 2:</label></td>
+					<td><input id="telefone2" type="text" name="fazenda.telefone2" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="proprietario">Proprietário:</label></td>
+					<td><input id="proprietario" type="text"
+						name="fazenda.proprietario" /></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit">Enviar</button>
+					</td>
+				</tr>
+			</table>
+			<br>
 		</fieldset>
 
 
 	</form>
-
-</body>
-</html>
+</div>

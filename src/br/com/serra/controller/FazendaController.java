@@ -6,6 +6,7 @@ import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.serra.dao.FazendaDao;
 import br.com.serra.model.FazendaModel;
+import br.com.serra.util.AutenticacaoInterception.Restrito;
 
 @Resource
 public class FazendaController {
@@ -23,7 +24,7 @@ public class FazendaController {
 		return dao.listaTudo();
 	}
 	
-	
+	@Restrito
 	public void adiciona(FazendaModel fazenda){
 		dao.salvar(fazenda);
 		result.forwardTo(this).lista();
@@ -31,17 +32,18 @@ public class FazendaController {
 	
 	public void formulario(){}
 	
+	@Restrito
 	public FazendaModel edita(int id){
 		return dao.carrega(id);
 	}
 	
-	
+	@Restrito
 	public void altera(FazendaModel fazendaModel){
 		dao.atualiza(fazendaModel);
 		result.redirectTo(this).lista();
 	}
 	
-	
+	@Restrito
 	public void remove(int id){
 		FazendaModel fazenda = dao.carrega(id);
 		dao.remove(fazenda);

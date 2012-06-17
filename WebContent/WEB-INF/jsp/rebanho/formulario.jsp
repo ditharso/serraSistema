@@ -1,12 +1,12 @@
-<body>
+<div align="center">
 
-	<form class="exampleform" action="adiciona" method="post">
+	<form action="adiciona" method="post">
 
 
 		<fieldset>
 			<legend>Adicionar Rebanho</legend>
 
-			<table>
+			<table border="1">
 				<tr>
 					<td><label for="nome">Nome:</label></td>
 					<td><input id="nome" type="text" name="rebanho.nome" /></td>
@@ -22,14 +22,19 @@
 					<td><input id="tipo" type="text" name="rebanho.tipo" /></td>
 				</tr>
 
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit">Enviar</button>
+					</td>
+				</tr>
 			</table>
 
 
-			<button type="submit">Enviar</button>
+
 		</fieldset>
 
 
 	</form>
 
-</body>
-</html>
+</div>

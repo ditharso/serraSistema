@@ -17,7 +17,7 @@
 				<th>vacina</th>
 				<th>dataAplicacao</th>
 				<th>fazenda</th>
-				<th>rebanho</th>
+				<th>Animal</th>
 	
 			</tr>
 		</thead>

@@ -23,6 +23,12 @@ public class UsuarioModel implements Serializable{
 	@Column 
 	private String nome;
 	
+	@Column
+	private String senha;
+	
+	@Column
+	private String login;
+	
 	@Column 
 	private String sexo;
 	
@@ -148,11 +154,24 @@ public class UsuarioModel implements Serializable{
 	public void setTelefone2(String telefone2) {
 		this.telefone2 = telefone2;
 	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
 	
-	
-	
-	
-	
+
 	
 
 }

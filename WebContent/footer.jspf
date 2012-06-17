@@ -1,9 +1,16 @@
-	<div id="menu" ><h3><font color="white">Sistema Serra</font></h3></div>
-		</div><!-- div content -->
-	</div><!-- div body -->
-	<div id="footer">
-	
-	</div>
+
+<div id="menu">
+	<h3>
+		<font color="white">Sistema Serra</font>
+	</h3>
+	<div class="fb-like" data-href="http://www.sistemaserra.com"
+		data-send="true" data-width="450" data-show-faces="true"></div>
+</div>
+</div>
+<!-- div content -->
+</div>
+<!-- div body -->
+<div id="footer"></div>
 
 </body>
 </html>

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.serra.model.UsuarioModel;
@@ -46,6 +47,14 @@ private final Session session;
 	
 	public UsuarioModel carrega(int id){
 		return (UsuarioModel) this.session.load(UsuarioModel.class, id);
+	}
+
+	public UsuarioModel carregar(UsuarioModel usuario) {
+		
+		return (UsuarioModel) session.createCriteria(UsuarioModel.class)
+				.add(Restrictions.eq("login", usuario.getLogin()))
+				.add(Restrictions.eq("senha", usuario.getSenha()))
+				.uniqueResult();
 	}
 	
 

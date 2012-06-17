@@ -15,7 +15,7 @@ import br.com.serra.dao.AnimalDao;
 import br.com.serra.dao.SituacaoDao;
 import br.com.serra.model.AnimalModel;
 import br.com.serra.model.SituacaoModel;
-
+import br.com.serra.util.AutenticacaoInterception.Restrito;
 
 @Resource
 public class SituacaoController {
@@ -24,65 +24,68 @@ public class SituacaoController {
 	private final Result result;
 	private final Validator validator;
 	private final AnimalDao daoa;
-	
-	public SituacaoController(SituacaoDao dao, Result result, Validator validator, AnimalDao daoa ){
+
+	public SituacaoController(SituacaoDao dao, Result result,
+			Validator validator, AnimalDao daoa) {
 		this.dao = dao;
 		this.result = result;
 		this.validator = validator;
-		this.daoa =daoa;
+		this.daoa = daoa;
 	}
-	
-	
-	@Get @Path("/situacao")
-	public List<SituacaoModel> lista(){
+
+	@Get
+	@Path("/situacao")
+	public List<SituacaoModel> lista() {
 		return dao.listaTudo();
 	}
-	
-	
-	
-	@Post @Path("/situacao")
-	public void adiciona(SituacaoModel situacao){
-		
-		if (situacao.getAnimal() == null ){
-			validator.add(new ValidationMessage(
-				"escolha um nome", "$situacao.nome"));
+
+	@Post
+	@Path("/situacao")
+	@Restrito
+	public void adiciona(SituacaoModel situacao) {
+
+		if (situacao.getAnimal() == null) {
+			validator.add(new ValidationMessage("escolha um nome",
+					"$situacao.nome"));
 		}
-		
-		//validator.validate(situacao); //esse seria pra validar com hibernate validate
+
+		// validator.validate(situacao); //esse seria pra validar com hibernate
+		// validate
 		validator.onErrorUsePageOf(SituacaoController.class).formulario();
-		
-		
-		
+
 		dao.salvar(situacao);
 		result.forwardTo(this).lista();
-		
-		
+
 	}
-	
-	@Get @Path("/situacao/novo")
-	public List<AnimalModel> formulario(){
+
+	@Get
+	@Path("/situacao/novo")
+	public List<AnimalModel> formulario() {
 		return daoa.listaTudo();
 	}
-	
-	
-	@Get @Path("/situacao/{id}")
-	public SituacaoModel edita(int id){
+
+	@Get
+	@Path("/situacao/{id}")
+	@Restrito
+	public SituacaoModel edita(int id) {
 		return dao.carrega(id);
 	}
-	
-	
-	
-	@Put @Path("/situacao/{situacao.id}")
-	public void altera(SituacaoModel situacaoModel){
+
+	@Put
+	@Path("/situacao/{situacao.id}")
+	@Restrito
+	public void altera(SituacaoModel situacaoModel) {
 		dao.atualiza(situacaoModel);
 		result.redirectTo(this).lista();
 	}
-	
-	@Delete @Path("/situacao/{id}")
-	public void remove(int id){
+
+	@Delete
+	@Path("/situacao/{id}")
+	@Restrito
+	public void remove(int id) {
 		SituacaoModel situacao = dao.carrega(id);
 		dao.remove(situacao);
 		result.redirectTo(SituacaoController.class).lista();
-		
-	}	
+
+	}
 }

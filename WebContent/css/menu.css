@@ -5,6 +5,14 @@ body,ul,li {
 	text-align: left;
 }
 
+/*body{
+	background-image: url("img/fundo.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}*/
+
+
 fieldset {
 	background-color: #F5F5F5;
 	width: 940px;

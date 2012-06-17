@@ -1,35 +1,59 @@
-<body>
 
-	<form action="adiciona" class="exampleform" method="post">
+<div align="center">
+
+	<form action="adiciona"
+		method="post">
 
 
 		<fieldset>
+
+
 			<legend>Adicionar Curral</legend>
-			
-			<label for="nome">Nome:</label> 
-			<input id="nome" type="text" name="curral.nome" /> 
-			
-			<label for="numero">numero:</label>
-			<input id="numero" type="text" name="curral.numero" />
-			
-			<label for="tamanho">tamanho:</label> 
-			<input id="tamanho" type="text" name="curral.tamanho" />
-			
-			<label for="pastagem">Pastagem:</label> 
-			<input id="pastagem" type="text" name="curral.pastagem" />
 
-			<label for="rosada">Rosadãa:</label> 
-			<input id="rosada" type="text" name="curral.rosada" />
+			<table border="1" >
+				<tr>
+					<td><label for="nome">Nome:</label></td>
+					<td><input id="nome" type="text" name="curral.nome" /></td>
+				</tr>
 
-			<label for="aguada">aguada:</label> 
-			<input id="aguada" type="text" name="curral.aguada" />
+				<tr>
+					<td><label for="numero">Numero:</label></td>
+					<td><input id="numero" type="text" name="curral.numero" /></td>
+				</tr>
 
-			
-			<button type="submit">Enviar</button>
+
+				<tr>
+					<td><label for="tamanho">tamanho:</label></td>
+					<td><input id="tamanho" type="text" name="curral.tamanho" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="pastagem">Pastagem:</label></td>
+					<td><input id="pastagem" type="text" name="curral.pastagem" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="rosada">Rosada:</label></td>
+					<td><input id="rosada" type="text" name="curral.rosada" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="aguada">Aguada:</label></td>
+					<td><input id="aguada" type="text" name="curral.aguada" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit">Enviar</button>
+					</td>
+				</tr>
+			</table>
+			<br>
 		</fieldset>
+		
 
 
 	</form>
-
-</body>
-</html>
+</div>
